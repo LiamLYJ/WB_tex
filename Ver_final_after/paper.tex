@@ -64,9 +64,9 @@ based on Deep Learning}
   The proposed global-to-local aggregation is able to predict multi-illuminant regionally by utilizing
   global information instead of training in patches~\cite{bianco2015single}~\cite{gijsenij2012color},
   as well as brings significant improvement for single illuminant estimation.
-  We outperform the state-of-the-art methods on standard benchmarks with the largest relative improvement of 16\%.
+  We outperform the state-of-the-art methods on standard benchmarks with the largest relative improvement of 13\%.
   In addition, we collect a dataset contains over 13k images for illuminant estimation and evaluation.
-  The code and dataset is available on \url{https://github.com/LiamLYJ/KPF_WB}. 
+  % The code and dataset is available on \url{https://github.com/LiamLYJ/KPF_WB}.
 \end{abstract}
 
 \begin{figure}[t]
@@ -566,7 +566,7 @@ DS-Net~\cite{shi2016deep}& 1.90 & 1.12 & 1.33 & 0.31 & 4.84 & 1.34\\
 SqueezeNet-FC4~\cite{hu2017fc}& 1.65 & 1.18 & 1.27 & 0.38 & 3.78 & 1.22\\
 FFCC~\cite{DBLP:journals/corr/BarronT16}& 1.61 & 0.86 & 1.02 & 0.23 & 4.27 & 1.07\\
 \hline
-Our method & \textbf{1.35} & \textbf{0.76} & \textbf{0.98} & \textbf{0.22} & \textbf{3.76} & \textbf{0.93} \\
+Our method & \textbf{1.40} & \textbf{0.77} & \textbf{0.98} & \textbf{0.21} & \textbf{3.86} & \textbf{0.95} \\
 \hline
 \end{tabular}
 }
@@ -587,7 +587,7 @@ outdoor shots taken by two high quality digital DSLR cameras (Canon 5D and Canon
 NUS-8 dataset contains total number of 1736 images captured by 8 different cameras: Canon EOS-1Ds Mark III,
 Canon EOS 600D, Fujifilm X-M1, Nikon D5200, Olympus E-PL6, Panasonic Lumix DMC-GX1, Samsung NX2000, and Sony SLT-A57.
 There are roughly equal numbers of images for each camera.
-We split the datasets into 5 folds, and perform cross evaluating on four of five for training and remaining for testing.
+We split the datasets into 3 folds, and perform cross evaluating on two of three for training and remaining for testing.
 Several standard metrics are reported in terms of angular distance with ground truth (see Equation~\ref{eq:acos}, in degree) :
 mean, median, tri-mean of all the errors,
 mean of the lowest 25\% of errors, and mean of the highest 25\% of errors.
@@ -636,7 +636,7 @@ SqueezeNet-FC4~\cite{hu2017fc}& 2.23 & 1.57 & 1.72 & 0.47 & 5.15 & 1.71 \\
 Cheng et al. 2015~\cite{cheng2015effective}& 2.18 & 1.48 & 1.64 & 0.46 & 5.03 & 1.65 \\
 FFCC~\cite{DBLP:journals/corr/BarronT16}& 1.99 & \textbf{1.31} & \textbf{1.43} & \textbf{0.35} & 4.75 & 1.44\\
 \hline
-Our method & \textbf{1.96} & 1.41 & 1.44 & \textbf{0.35} & \textbf{4.29} & \textbf{1.36} \\
+Our method & \textbf{1.98} & 1.41 & 1.46 & 0.39 & \textbf{4.38} & \textbf{1.38} \\
 \hline
 \end{tabular}
 }
